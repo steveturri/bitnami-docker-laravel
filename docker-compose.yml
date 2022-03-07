@@ -9,14 +9,14 @@ services:
       - MARIADB_USER=bn_myapp
       - MARIADB_DATABASE=bitnami_myapp
   myapp:
-    image: docker.io/bitnami/laravel:9
+    image: docker.io/sturri/laravel8:latest
     ports:
       - '8000:8000'
     environment:
       - DB_HOST=mariadb
       - DB_PORT=3306
-      - DB_USERNAME=bn_myapp
-      - DB_DATABASE=bitnami_myapp
+      - DB_USERNAME=pbhub
+      - DB_DATABASE=pbhub
     volumes_from:
       - pbhub_data
     depends_on:
