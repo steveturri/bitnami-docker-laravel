@@ -17,7 +17,12 @@ services:
       - DB_PORT=3306
       - DB_USERNAME=bn_myapp
       - DB_DATABASE=bitnami_myapp
-    volumes:
-      - './my-project:/app'
+    volumes_from:
+      - pbhub_data
     depends_on:
       - mariadb
+  pbhub_data:
+    image: braydeejohnson/data
+    volumes:
+      - ./pbhub:/data/www
+  
