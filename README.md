@@ -1,5 +1,9 @@
 # Laravel packaged by Bitnami
 
+## What changed in this fork?
+
+This fork is locked and modified to meet company use case for local dev envs. Specifically we are removing the raw clone of laravel and allowing our local mapped repo to be used.  Developer should clone the repo first.  The docker-compose.yml will have more information.
+
 ## What is Laravel?
 
 > Laravel is an open source PHP framework for web application development. 
